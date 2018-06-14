@@ -7,23 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A078D9020C65ED900DCA6EB /* msgListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A078D8F20C65ED900DCA6EB /* msgListTableViewCell.swift */; };
+		0A078D9220C66E6400DCA6EB /* UploadActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A078D9120C66E6400DCA6EB /* UploadActionView.swift */; };
+		0A078D9420C673C700DCA6EB /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A078D9320C673C700DCA6EB /* PopupViewController.swift */; };
+		0A078D9620C67CB500DCA6EB /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A078D9520C67CB500DCA6EB /* ResourceViewController.swift */; };
+		0A078D9820C6818700DCA6EB /* resourceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A078D9720C6818700DCA6EB /* resourceCollectionViewCell.swift */; };
+		0A217E7C20C2E11600A54E42 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E7B20C2E11600A54E42 /* ShopCollectionViewCell.swift */; };
+		0A217E7F20C2F2C800A54E42 /* mainFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E7E20C2F2C800A54E42 /* mainFoodViewController.swift */; };
+		0A217E8120C2F2D800A54E42 /* foodlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E8020C2F2D800A54E42 /* foodlistTableViewCell.swift */; };
+		0A217E8320C2F59600A54E42 /* foodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E8220C2F59600A54E42 /* foodListViewController.swift */; };
+		0A3460D120BA3B5C001117E0 /* WorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3460D020BA3B5C001117E0 /* WorksViewController.swift */; };
+		0A5F620120BAED57009A557E /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A99707120AFE5E900E4D37C /* PagingMenuController.framework */; };
+		0A5F620220BAED57009A557E /* PagingMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A99707120AFE5E900E4D37C /* PagingMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A5F620820BB0DA0009A557E /* PetsCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F620720BB0DA0009A557E /* PetsCareViewController.swift */; };
+		0A5F620A20BB0DBF009A557E /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F620920BB0DBF009A557E /* ShopViewController.swift */; };
+		0A5F620C20BB0DEF009A557E /* ArticalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F620B20BB0DEF009A557E /* ArticalsViewController.swift */; };
+		0A5F620E20BB1157009A557E /* PetsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F620D20BB1157009A557E /* PetsListTableViewCell.swift */; };
+		0A99708020B0093D00E4D37C /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99707F20B0093D00E4D37C /* RootTabViewController.swift */; };
+		0A99708420B00D0900E4D37C /* PetsShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99708320B00D0900E4D37C /* PetsShowViewController.swift */; };
+		0A99708620B00D1400E4D37C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99708520B00D1400E4D37C /* MeViewController.swift */; };
+		0A99708820B00D2200E4D37C /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99708720B00D2200E4D37C /* UploadViewController.swift */; };
+		0A99708A20B00D3100E4D37C /* MSGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99708920B00D3100E4D37C /* MSGViewController.swift */; };
+		0A99708D20B00DE700E4D37C /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99708C20B00DE700E4D37C /* PetsViewController.swift */; };
+		0A99709220B0134800E4D37C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A99709120B0134800E4D37C /* Launch Screen.storyboard */; };
+		0A99709420B0145700E4D37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A99709320B0145700E4D37C /* Main.storyboard */; };
+		0A99709820B01B5000E4D37C /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99709720B01B5000E4D37C /* FollowViewController.swift */; };
+		0A99709A20B01C4800E4D37C /* Extentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99709920B01C4800E4D37C /* Extentsions.swift */; };
+		0A99709C20B029D900E4D37C /* ShowContentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99709B20B029D900E4D37C /* ShowContentCollectionCell.swift */; };
+		0A99709E20B061B500E4D37C /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99709D20B061B500E4D37C /* Animation.swift */; };
 		0AA562F120A9353D001221B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA562F020A9353D001221B7 /* AppDelegate.swift */; };
-		0AA562F320A9353D001221B7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA562F220A9353D001221B7 /* FirstViewController.swift */; };
-		0AA562F520A9353D001221B7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA562F420A9353D001221B7 /* SecondViewController.swift */; };
-		0AA562F820A9353D001221B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA562F620A9353D001221B7 /* Main.storyboard */; };
 		0AA562FA20A9353F001221B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA562F920A9353F001221B7 /* Assets.xcassets */; };
-		0AA562FD20A9353F001221B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA562FB20A9353F001221B7 /* LaunchScreen.storyboard */; };
+		0AAAFA4D20BD2B37005C7F25 /* PetsShowNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAAFA4C20BD2B37005C7F25 /* PetsShowNavViewController.swift */; };
+		0ADBEDA220B9AED300430ECA /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBEDA120B9AED300430ECA /* SwiftNotice.swift */; };
+		0ADBEDA420B9AEEC00430ECA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBEDA320B9AEEC00430ECA /* SwiftyJSON.swift */; };
+		0ADBEDA620B9B07800430ECA /* greyLayerPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBEDA520B9B07700430ECA /* greyLayerPrompt.swift */; };
+		0ADBEDA820BA3A0B00430ECA /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADBEDA720BA3A0B00430ECA /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A5F620320BAED57009A557E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A99706C20AFE5E900E4D37C /* PagingMenuController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ECE530661B6DEB18001CF201;
+			remoteInfo = PagingMenuController;
+		};
+		0A99707020AFE5E900E4D37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A99706C20AFE5E900E4D37C /* PagingMenuController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ECE530671B6DEB18001CF201;
+			remoteInfo = PagingMenuController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A5F620520BAED57009A557E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A5F620220BAED57009A557E /* PagingMenuController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A078D8F20C65ED900DCA6EB /* msgListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = msgListTableViewCell.swift; sourceTree = "<group>"; };
+		0A078D9120C66E6400DCA6EB /* UploadActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadActionView.swift; sourceTree = "<group>"; };
+		0A078D9320C673C700DCA6EB /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		0A078D9520C67CB500DCA6EB /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		0A078D9720C6818700DCA6EB /* resourceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A217E7B20C2E11600A54E42 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A217E7E20C2F2C800A54E42 /* mainFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainFoodViewController.swift; sourceTree = "<group>"; };
+		0A217E8020C2F2D800A54E42 /* foodlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodlistTableViewCell.swift; sourceTree = "<group>"; };
+		0A217E8220C2F59600A54E42 /* foodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodListViewController.swift; sourceTree = "<group>"; };
+		0A3460D020BA3B5C001117E0 /* WorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksViewController.swift; sourceTree = "<group>"; };
+		0A5F620720BB0DA0009A557E /* PetsCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCareViewController.swift; sourceTree = "<group>"; };
+		0A5F620920BB0DBF009A557E /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		0A5F620B20BB0DEF009A557E /* ArticalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalsViewController.swift; sourceTree = "<group>"; };
+		0A5F620D20BB1157009A557E /* PetsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsListTableViewCell.swift; sourceTree = "<group>"; };
+		0A99706C20AFE5E900E4D37C /* PagingMenuController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagingMenuController.xcodeproj; path = "../../../Downloads/PagingMenuController-master/PagingMenuController.xcodeproj"; sourceTree = "<group>"; };
+		0A99707F20B0093D00E4D37C /* RootTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
+		0A99708320B00D0900E4D37C /* PetsShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsShowViewController.swift; sourceTree = "<group>"; };
+		0A99708520B00D1400E4D37C /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		0A99708720B00D2200E4D37C /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		0A99708920B00D3100E4D37C /* MSGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSGViewController.swift; sourceTree = "<group>"; };
+		0A99708C20B00DE700E4D37C /* PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewController.swift; sourceTree = "<group>"; };
+		0A99709120B0134800E4D37C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "PetsShow/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		0A99709320B0145700E4D37C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0A99709720B01B5000E4D37C /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		0A99709920B01C4800E4D37C /* Extentsions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentsions.swift; sourceTree = "<group>"; };
+		0A99709B20B029D900E4D37C /* ShowContentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContentCollectionCell.swift; sourceTree = "<group>"; };
+		0A99709D20B061B500E4D37C /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		0AA562ED20A9353D001221B7 /* PetsShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetsShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA562F020A9353D001221B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AA562F220A9353D001221B7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0AA562F420A9353D001221B7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		0AA562F720A9353D001221B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA562F920A9353F001221B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AA562FC20A9353F001221B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA562FE20A9353F001221B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAAFA4C20BD2B37005C7F25 /* PetsShowNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsShowNavViewController.swift; sourceTree = "<group>"; };
+		0ADBEDA120B9AED300430ECA /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		0ADBEDA320B9AEEC00430ECA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		0ADBEDA520B9B07700430ECA /* greyLayerPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = greyLayerPrompt.swift; sourceTree = "<group>"; };
+		0ADBEDA720BA3A0B00430ECA /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +119,125 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5F620120BAED57009A557E /* PagingMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A217E7A20C2DFF300A54E42 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				0A217E7D20C2F29600A54E42 /* MainFood */,
+				0A5F620920BB0DBF009A557E /* ShopViewController.swift */,
+				0A217E7B20C2E11600A54E42 /* ShopCollectionViewCell.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		0A217E7D20C2F29600A54E42 /* MainFood */ = {
+			isa = PBXGroup;
+			children = (
+				0A217E7E20C2F2C800A54E42 /* mainFoodViewController.swift */,
+				0A217E8220C2F59600A54E42 /* foodListViewController.swift */,
+				0A217E8020C2F2D800A54E42 /* foodlistTableViewCell.swift */,
+			);
+			path = MainFood;
+			sourceTree = "<group>";
+		};
+		0A5F620620BB0D8D009A557E /* PetsCare */ = {
+			isa = PBXGroup;
+			children = (
+				0A5F620720BB0DA0009A557E /* PetsCareViewController.swift */,
+				0A5F620D20BB1157009A557E /* PetsListTableViewCell.swift */,
+				0A5F620B20BB0DEF009A557E /* ArticalsViewController.swift */,
+			);
+			path = PetsCare;
+			sourceTree = "<group>";
+		};
+		0A99706D20AFE5E900E4D37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A99707120AFE5E900E4D37C /* PagingMenuController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A99707520AFE66700E4D37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A99707A20B0065C00E4D37C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0A99709920B01C4800E4D37C /* Extentsions.swift */,
+				0A99709D20B061B500E4D37C /* Animation.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		0A99707B20B0066400E4D37C /* show */ = {
+			isa = PBXGroup;
+			children = (
+				0A99708320B00D0900E4D37C /* PetsShowViewController.swift */,
+				0A99709B20B029D900E4D37C /* ShowContentCollectionCell.swift */,
+				0A99709720B01B5000E4D37C /* FollowViewController.swift */,
+				0ADBEDA720BA3A0B00430ECA /* ContentViewController.swift */,
+				0A3460D020BA3B5C001117E0 /* WorksViewController.swift */,
+			);
+			path = show;
+			sourceTree = "<group>";
+		};
+		0A99707C20B0067000E4D37C /* me */ = {
+			isa = PBXGroup;
+			children = (
+				0A99708520B00D1400E4D37C /* MeViewController.swift */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
+		0A99707D20B0067900E4D37C /* upload */ = {
+			isa = PBXGroup;
+			children = (
+				0A99708720B00D2200E4D37C /* UploadViewController.swift */,
+				0A078D9320C673C700DCA6EB /* PopupViewController.swift */,
+				0A078D9120C66E6400DCA6EB /* UploadActionView.swift */,
+				0A078D9720C6818700DCA6EB /* resourceCollectionViewCell.swift */,
+				0A078D9520C67CB500DCA6EB /* ResourceViewController.swift */,
+			);
+			path = upload;
+			sourceTree = "<group>";
+		};
+		0A99707E20B0068500E4D37C /* message */ = {
+			isa = PBXGroup;
+			children = (
+				0A99708920B00D3100E4D37C /* MSGViewController.swift */,
+				0A078D8F20C65ED900DCA6EB /* msgListTableViewCell.swift */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		0A99708B20B00DCF00E4D37C /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				0A99708C20B00DE700E4D37C /* PetsViewController.swift */,
+				0A5F620620BB0D8D009A557E /* PetsCare */,
+				0A217E7A20C2DFF300A54E42 /* Shop */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
 		0AA562E420A9353D001221B7 = {
 			isa = PBXGroup;
 			children = (
+				0A99706C20AFE5E900E4D37C /* PagingMenuController.xcodeproj */,
 				0AA562EF20A9353D001221B7 /* PetsShow */,
 				0AA562EE20A9353D001221B7 /* Products */,
+				0A99707520AFE66700E4D37C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +252,32 @@
 		0AA562EF20A9353D001221B7 /* PetsShow */ = {
 			isa = PBXGroup;
 			children = (
+				0ADBED9F20B9AEA800430ECA /* refrence */,
+				0A99709320B0145700E4D37C /* Main.storyboard */,
 				0AA562F020A9353D001221B7 /* AppDelegate.swift */,
-				0AA562F220A9353D001221B7 /* FirstViewController.swift */,
-				0AA562F420A9353D001221B7 /* SecondViewController.swift */,
-				0AA562F620A9353D001221B7 /* Main.storyboard */,
+				0AAAFA4C20BD2B37005C7F25 /* PetsShowNavViewController.swift */,
+				0A99707A20B0065C00E4D37C /* common */,
+				0A99707F20B0093D00E4D37C /* RootTabViewController.swift */,
+				0A99709120B0134800E4D37C /* Launch Screen.storyboard */,
+				0A99707E20B0068500E4D37C /* message */,
+				0A99707D20B0067900E4D37C /* upload */,
+				0A99708B20B00DCF00E4D37C /* Pets */,
+				0A99707C20B0067000E4D37C /* me */,
+				0A99707B20B0066400E4D37C /* show */,
 				0AA562F920A9353F001221B7 /* Assets.xcassets */,
-				0AA562FB20A9353F001221B7 /* LaunchScreen.storyboard */,
 				0AA562FE20A9353F001221B7 /* Info.plist */,
 			);
 			path = PetsShow;
+			sourceTree = "<group>";
+		};
+		0ADBED9F20B9AEA800430ECA /* refrence */ = {
+			isa = PBXGroup;
+			children = (
+				0ADBEDA120B9AED300430ECA /* SwiftNotice.swift */,
+				0ADBEDA520B9B07700430ECA /* greyLayerPrompt.swift */,
+				0ADBEDA320B9AEEC00430ECA /* SwiftyJSON.swift */,
+			);
+			path = refrence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,10 +290,12 @@
 				0AA562E920A9353D001221B7 /* Sources */,
 				0AA562EA20A9353D001221B7 /* Frameworks */,
 				0AA562EB20A9353D001221B7 /* Resources */,
+				0A5F620520BAED57009A557E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A5F620420BAED57009A557E /* PBXTargetDependency */,
 			);
 			name = PetsShow;
 			productName = PetsShow;
@@ -113,6 +328,12 @@
 			mainGroup = 0AA562E420A9353D001221B7;
 			productRefGroup = 0AA562EE20A9353D001221B7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A99706D20AFE5E900E4D37C /* Products */;
+					ProjectRef = 0A99706C20AFE5E900E4D37C /* PagingMenuController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0AA562EC20A9353D001221B7 /* PetsShow */,
@@ -120,14 +341,24 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0A99707120AFE5E900E4D37C /* PagingMenuController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PagingMenuController.framework;
+			remoteRef = 0A99707020AFE5E900E4D37C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0AA562EB20A9353D001221B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA562FD20A9353F001221B7 /* LaunchScreen.storyboard in Resources */,
+				0A99709420B0145700E4D37C /* Main.storyboard in Resources */,
+				0A99709220B0134800E4D37C /* Launch Screen.storyboard in Resources */,
 				0AA562FA20A9353F001221B7 /* Assets.xcassets in Resources */,
-				0AA562F820A9353D001221B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +369,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA562F520A9353D001221B7 /* SecondViewController.swift in Sources */,
+				0ADBEDA820BA3A0B00430ECA /* ContentViewController.swift in Sources */,
+				0A99708020B0093D00E4D37C /* RootTabViewController.swift in Sources */,
+				0A5F620A20BB0DBF009A557E /* ShopViewController.swift in Sources */,
+				0A078D9020C65ED900DCA6EB /* msgListTableViewCell.swift in Sources */,
+				0A078D9220C66E6400DCA6EB /* UploadActionView.swift in Sources */,
+				0A99709C20B029D900E4D37C /* ShowContentCollectionCell.swift in Sources */,
+				0A99708820B00D2200E4D37C /* UploadViewController.swift in Sources */,
+				0A99709820B01B5000E4D37C /* FollowViewController.swift in Sources */,
+				0A217E8120C2F2D800A54E42 /* foodlistTableViewCell.swift in Sources */,
+				0ADBEDA420B9AEEC00430ECA /* SwiftyJSON.swift in Sources */,
+				0A078D9620C67CB500DCA6EB /* ResourceViewController.swift in Sources */,
+				0A99708420B00D0900E4D37C /* PetsShowViewController.swift in Sources */,
+				0A99708620B00D1400E4D37C /* MeViewController.swift in Sources */,
+				0A217E7F20C2F2C800A54E42 /* mainFoodViewController.swift in Sources */,
+				0A5F620E20BB1157009A557E /* PetsListTableViewCell.swift in Sources */,
+				0A99709E20B061B500E4D37C /* Animation.swift in Sources */,
+				0A5F620820BB0DA0009A557E /* PetsCareViewController.swift in Sources */,
+				0A3460D120BA3B5C001117E0 /* WorksViewController.swift in Sources */,
+				0A99709A20B01C4800E4D37C /* Extentsions.swift in Sources */,
+				0A99708A20B00D3100E4D37C /* MSGViewController.swift in Sources */,
+				0ADBEDA220B9AED300430ECA /* SwiftNotice.swift in Sources */,
+				0A217E7C20C2E11600A54E42 /* ShopCollectionViewCell.swift in Sources */,
+				0AAAFA4D20BD2B37005C7F25 /* PetsShowNavViewController.swift in Sources */,
 				0AA562F120A9353D001221B7 /* AppDelegate.swift in Sources */,
-				0AA562F320A9353D001221B7 /* FirstViewController.swift in Sources */,
+				0A078D9820C6818700DCA6EB /* resourceCollectionViewCell.swift in Sources */,
+				0ADBEDA620B9B07800430ECA /* greyLayerPrompt.swift in Sources */,
+				0A5F620C20BB0DEF009A557E /* ArticalsViewController.swift in Sources */,
+				0A99708D20B00DE700E4D37C /* PetsViewController.swift in Sources */,
+				0A217E8320C2F59600A54E42 /* foodListViewController.swift in Sources */,
+				0A078D9420C673C700DCA6EB /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		0AA562F620A9353D001221B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AA562F720A9353D001221B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		0A5F620420BAED57009A557E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagingMenuController;
+			targetProxy = 0A5F620320BAED57009A557E /* PBXContainerItemProxy */;
 		};
-		0AA562FB20A9353F001221B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AA562FC20A9353F001221B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0AA562FF20A9353F001221B7 /* Debug */ = {
@@ -283,10 +530,12 @@
 		0AA5630220A9353F001221B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKNP4PJZES;
 				INFOPLIST_FILE = PetsShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +543,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Wood.PetsShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0AA5630320A9353F001221B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JKNP4PJZES;
 				INFOPLIST_FILE = PetsShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Wood.PetsShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
