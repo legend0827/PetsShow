@@ -24,7 +24,7 @@ class resourceCollectionViewCell: UICollectionViewCell {
         timeLine.textColor = UIColor.backgroundColors(color: .white)
         timeLine.font = UIFont.systemFont(ofSize: 12)
         
-        Rimage.frame = frame
+        Rimage.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height) //frame
         Rimage.image = UIImage(named:"default1")
         self.contentView.addSubview(Rimage)
         self.contentView.addSubview(timeLine)

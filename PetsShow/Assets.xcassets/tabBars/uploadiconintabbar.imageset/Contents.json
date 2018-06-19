@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "加-3.png",
+      "filename" : "uploadicon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "加-2.png",
+      "filename" : "uploadicon@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "加.png",
+      "filename" : "uploadicon@3x.png",
       "scale" : "3x"
     }
   ],

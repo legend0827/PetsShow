@@ -10,7 +10,7 @@ import UIKit
 
 class RootTabViewController: UITabBarController {
     
-    let petsShowVC = PetsShowViewController()
+    let playGroundVC = PlayGroundViewController()
     let petsVC = PetsViewController()
     let uploadVC = UploadViewController()
     let msgVC = MSGViewController()
@@ -21,36 +21,30 @@ class RootTabViewController: UITabBarController {
         super.init(nibName: nil, bundle: nil)
 
         
-        petsShowVC.tabBarItem.image = UIImage(named: "petsshowiconintabbar-dis")
+        playGroundVC.tabBarItem.image = UIImage(named: "petsshowiconintabbar-dis")
         petsVC.tabBarItem.image = UIImage(named: "petsiconintabbar-dis")
         uploadVC.tabBarItem.image = UIImage(named: "uploadiconintabbar")
         msgVC.tabBarItem.image = UIImage(named: "msgiconintabbar-dis")
         meVC.tabBarItem.image = UIImage(named: "meiconintabbar-dis")
         
-        petsShowVC.tabBarItem.selectedImage = UIImage(named: "petsshowiconintabbar")
+        playGroundVC.tabBarItem.selectedImage = UIImage(named: "petsshowiconintabbar")
         petsVC.tabBarItem.selectedImage = UIImage(named: "petsiconintabbar")
         uploadVC.tabBarItem.selectedImage = UIImage(named: "uploadiconintabbar")
         msgVC.tabBarItem.selectedImage = UIImage(named: "msgiconintabbar")
         meVC.tabBarItem.selectedImage = UIImage(named: "meiconintabbar")
         
-        self.viewControllers = [petsShowVC,petsVC,uploadVC,msgVC,meVC]
-      //  self.tabBar.tintColor = UIColor.backgroundColors(color: .white)
-        
-        self.tabBar.backgroundColor = UIColor.clear
-        self.tabBar.isOpaque = true
+        self.viewControllers = [playGroundVC,petsVC,uploadVC,msgVC,meVC]
+        /*透明tab设置*/
+        //self.tabBar.backgroundColor = UIColor.clear
+      //  self.tabBar.isOpaque = true
 
-        self.tabBar.backgroundColor = UIColor.clear
-        self.tabBar.backgroundImage = UIImage()
-        self.tabBar.shadowImage = UIImage()
-//        //右滑监听
-//        let swipeLeft = UIPanGestureRecognizer(target: self, action: #selector(swiptedLeft(_:)))
-//        petsShowVC.view.addGestureRecognizer(swipeLeft)
-//        
-//        view.addSubview(petsShowVC.view)
-//        
-//        //建立父子关系
-//        addChildViewController(petsShowVC)
-//        petsShowVC.didMove(toParentViewController: self)
+       // self.tabBar.backgroundImage =
+        let shandowView:UIImageView = UIImageView.init(frame: CGRect(x: 0, y: -17, width: kWidth, height: 65 + heightChangeForiPhoneXFromBottom))
+        shandowView.image = UIImage(named: "tabbarshandowimg")
+        self.tabBar.addSubview(shandowView)
+        self.tabBar.sendSubview(toBack: shandowView)
+        //self.tabBar.shadowImage = UIImage(named: "tabbarshandowimg")
+        /*透明tabbar设置*/
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -161,7 +155,7 @@ extension RootTabViewController {
         
         switch selectedIndex {
         case 0:
-            userIsInMain = true// petsShowVC.navigationController?.visibleViewController is RootTabViewController//is SBTabMainBaseViewController
+            userIsInMain = true// playGroundVC.navigationController?.visibleViewController is RootTabViewController//is SBTabMainBaseViewController
         case 1:
             userIsInMain = false//petsVC.navigationController?.visibleViewController is RootTabViewController
         case 2:
@@ -171,7 +165,7 @@ extension RootTabViewController {
         case 4:
             userIsInMain = false//meVC.navigationController?.visibleViewController is RootTabViewController
         default:
-            userIsInMain = false// petsShowVC.navigationController?.visibleViewController is RootTabViewController
+            userIsInMain = false// playGroundVC.navigationController?.visibleViewController is RootTabViewController
             //nav = self?.rootController.dynamicViewController.navigationController
         }
         

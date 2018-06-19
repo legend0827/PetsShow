@@ -58,7 +58,7 @@ class UploadActionView: UIView,UICollectionViewDelegate,UICollectionViewDataSour
         layout.sectionInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)            //section四周的缩进
         layout.scrollDirection = UICollectionViewScrollDirection.vertical  //滚动方向
         
-        let tempCollectionView = UICollectionView(frame: CGRect(x: 0, y: 68+heightChangeForiPhoneXFromTop, width: kWidth, height: kHight - 170 - heightChangeForiPhoneXFromBottom),collectionViewLayout:layout)
+        let tempCollectionView = UICollectionView(frame: CGRect(x: 0, y: 88+heightChangeForiPhoneXFromTop, width: kWidth, height: kHight - 170 - heightChangeForiPhoneXFromBottom),collectionViewLayout:layout)
         tempCollectionView.backgroundColor = UIColor.backgroundColors(color: .white)
         tempCollectionView.delegate = self
         tempCollectionView.dataSource = self

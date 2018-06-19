@@ -17,11 +17,12 @@ private struct PagingMenuOptions:PagingMenuControllerCustomizable{
     //商店
     private let shopVC = ShopViewController()
     
+    
     //论坛
-    ///暂时不加
+    private let socialVC = SocialViewController()
     //
     
-    var backgroundColor: UIColor = UIColor.backgroundColors(color: .mainColor)// UIColor.colorWithRgba(19, g: 18, b: 43, a: 1.0)//UIColor.backgroundColors(color: .black) // 设置菜单栏底色
+    var backgroundColor: UIColor = UIColor.backgroundColors(color: .white)// UIColor.colorWithRgba(19, g: 18, b: 43, a: 1.0)//UIColor.backgroundColors(color: .black) // 设置菜单栏底色
     
     //组件类型
     fileprivate var componentType: ComponentType{
@@ -30,28 +31,30 @@ private struct PagingMenuOptions:PagingMenuControllerCustomizable{
     
     //所有子视图控制器
     fileprivate var pagingControllers: [UIViewController] {
-        return [PetsCareVC,shopVC]
+        return [PetsCareVC,shopVC,socialVC]
     }
     
     //菜单配置项
     fileprivate struct MenuOptions: MenuViewCustomizable {
-        var backgroundColor: UIColor = UIColor.backgroundColors(color: .mainColor)
-        var selectedBackgroundColor: UIColor = UIColor.backgroundColors(color: .mainColor)
+        var backgroundColor: UIColor = UIColor.backgroundColors(color: .white)
+        var selectedBackgroundColor: UIColor = UIColor.backgroundColors(color: .white)
+        //水平间距
+        var horizontalMargin: CGFloat = 10.0
         //菜单显示模式
         var displayMode: MenuDisplayMode {
-            return .standard(widthMode: .fixed(width: kWidth/8), centerItem: false, scrollingMode: MenuScrollingMode.scrollEnabled)
+            return .standard(widthMode: .flexible, centerItem: false, scrollingMode: MenuScrollingMode.scrollEnabled) //.fixed(width: kWidth/16)
             //  return .segmentedControl
         }
         var menuItemMode: MenuItemWidthMode{
-            return .fixed(width: kWidth/4)
+            return .flexible//.fixed(width: kWidth/18)
         }
         //菜单项
         var itemsOptions: [MenuItemViewCustomizable] {
-            return [MenuItem1(), MenuItem2()]
+            return [MenuItem1(), MenuItem2(),MenuItem3()]
         }
         //设置选中栏下方条的颜色
         var focusMode:MenuFocusMode {
-            return .underline(height: 2, color: UIColor.clear, horizontalPadding: 12, verticalPadding: 5) // 水平间距 0 ，垂直间距 0
+            return .none//.underline(height: 2, color: UIColor.clear, horizontalPadding: 2, verticalPadding: 5) // 水平间距 0 ，垂直间距 0
         }
         
     }
@@ -61,7 +64,7 @@ private struct PagingMenuOptions:PagingMenuControllerCustomizable{
         //自定义菜单项名称
         var displayMode: MenuItemDisplayMode {
             //return .text(title: MenuItemText(text: "全部"))
-            return .text(title: MenuItemText(text: "宠物Care", color: UIColor.titleColors(color: .white), selectedColor: UIColor.titleColors(color: .white), font: UIFont.systemFont(ofSize: 16), selectedFont: UIFont.boldSystemFont(ofSize: 16)))
+            return .text(title: MenuItemText(text: "我的宠物", color: UIColor.backgroundColors(color: .black), selectedColor: UIColor.backgroundColors(color: .mainColor), font: UIFont.systemFont(ofSize: 16), selectedFont: UIFont.boldSystemFont(ofSize: 16)))
         }
     }
     
@@ -69,10 +72,17 @@ private struct PagingMenuOptions:PagingMenuControllerCustomizable{
     fileprivate struct MenuItem2: MenuItemViewCustomizable {
         //自定义菜单项名称
         var displayMode: MenuItemDisplayMode {
-            return .text(title: MenuItemText(text: "商城", color: UIColor.titleColors(color: .white), selectedColor: UIColor.titleColors(color: .white), font: UIFont.systemFont(ofSize: 16), selectedFont: UIFont.boldSystemFont(ofSize: 16)))
+            return .text(title: MenuItemText(text: "商城", color: UIColor.backgroundColors(color: .black), selectedColor: UIColor.backgroundColors(color: .mainColor), font: UIFont.systemFont(ofSize: 16), selectedFont: UIFont.boldSystemFont(ofSize: 16)))
         }
     }
     
+    //第2个菜单项
+    fileprivate struct MenuItem3: MenuItemViewCustomizable {
+        //自定义菜单项名称
+        var displayMode: MenuItemDisplayMode {
+            return .text(title: MenuItemText(text: "论坛", color: UIColor.backgroundColors(color: .black), selectedColor: UIColor.backgroundColors(color: .mainColor), font: UIFont.systemFont(ofSize: 16), selectedFont: UIFont.boldSystemFont(ofSize: 16)))
+        }
+    }
 }
 
 class PetsViewController: UIViewController {
@@ -89,7 +99,9 @@ class PetsViewController: UIViewController {
     }
     
     func setupUI(){
-        
+        let BGViewWithShandow:UIImageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: kWidth, height: 90+heightChangeForiPhoneXFromTop))
+        BGViewWithShandow.image = UIImage(named: "hearderwithshandowimg")
+        self.view.addSubview(BGViewWithShandow)
         /// 菜单栏配置
         
         //分页菜单配置
@@ -97,7 +109,7 @@ class PetsViewController: UIViewController {
         //分页菜单控制器初始化
         let pagingMenuController = PagingMenuController(options: options)
         //分页菜单控制器尺寸设置
-        pagingMenuController.view.frame.origin.y += 20 //28 //(4 + heightChangeForiPhoneXFromTop)*3
+        pagingMenuController.view.frame.origin.y += 0 //28 //(4 + heightChangeForiPhoneXFromTop)*3
         pagingMenuController.view.frame.size.height -= 5
         
         if UIDevice.current.isX(){
@@ -113,12 +125,15 @@ class PetsViewController: UIViewController {
         self.view.addSubview(pagingMenuController.view)
     }
     override func viewWillAppear(_ animated: Bool) {
-        setStatusBarBackgroundColor(color: UIColor.backgroundColors(color: .mainColor))
-        UIApplication.shared.isStatusBarHidden = false
-        UIView.animate(withDuration: 0.5) { () -> Void in
-            self.setNeedsStatusBarAppearanceUpdate()
-        }
+        setStatusBarHiden(toHidden: true, ViewController: self)
+        setStatusBarBackgroundColor(color: UIColor.backgroundColors(color: .clear))
         
+//        //
+//        UIApplication.shared.isStatusBarHidden = true
+//        UIView.animate(withDuration: 0.5) { () -> Void in
+//            self.setNeedsStatusBarAppearanceUpdate()
+//        }
+//
     }
 
     /*

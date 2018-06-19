@@ -83,7 +83,7 @@ class PetsShowNavViewController: UIViewController {
             var nav: UINavigationController?
             switch selectedIndex {
             case 0:
-                nav = self?.rootController.petsShowVC.navigationController
+                nav = self?.rootController.playGroundVC.navigationController
             case 1:
                 nav = self?.rootController.petsVC.navigationController
             case 2:
@@ -93,7 +93,7 @@ class PetsShowNavViewController: UIViewController {
             case 4:
                 nav = self?.rootController.meVC.navigationController
             default:
-                nav = self?.rootController.petsShowVC.navigationController
+                nav = self?.rootController.playGroundVC.navigationController
                 //nav = self?.rootController.dynamicViewController.navigationController
             }
             nav?.pushViewController(vc, animated: animated)

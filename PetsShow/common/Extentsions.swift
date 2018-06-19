@@ -41,11 +41,11 @@ let titles:NSDictionary = [
 ]
 //随机用户名
 let authors:NSDictionary = [
-    "1":"云帆风清",
+    "1":"云帆风",
     "2":"Mr.疯子",
     "3":"云养蜂",
     "4":"自由风",
-    "5":"差不多得了"
+    "5":"差不多"
 ]
 //产品名字
 let proTitle:NSDictionary = [
@@ -176,6 +176,14 @@ enum resourceListType: String {
     /// 相册
     case Photo
 }
+
+//广场内容分类
+enum playGrundCategory:String {
+    case following
+    case recommend
+    case new
+}
+
 class Extentsions: NSObject {
 
 }
@@ -268,7 +276,7 @@ extension UIColor {
         var tempColor = UIColor.colorWithRgba(245, g: 245, b: 245, a: 1.0)
         switch color {
         case .mainColor:
-            tempColor = UIColor.colorWithRgba(209, g: 150, b: 102, a: 1.0)
+            tempColor = UIColor.colorWithRgba(41, g: 215, b: 203, a: 1.0)
         case .red:
             tempColor = UIColor.colorWithRgba(232, g: 75, b: 76, a: 1.0)
         case .lightRed:
@@ -585,12 +593,18 @@ func setStatusBarBackgroundColor(color : UIColor) {
     if color == UIColor.backgroundColors(color: .mainColor) || color == UIColor.backgroundColors(color: .black) {
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent// default // 改成白色字体
     }else if color == UIColor.backgroundColors(color: .clear){
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
     }else{
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent // 改成深色字体
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default // 改成深色字体
     }
 }
-
+//设置状态栏显示或隐藏
+func setStatusBarHiden(toHidden:Bool,ViewController:UIViewController){
+    UIApplication.shared.isStatusBarHidden = toHidden
+    UIView.animate(withDuration: 0.5) { () -> Void in
+        ViewController.setNeedsStatusBarAppearanceUpdate()
+    }
+}
 
 //创建毛玻璃效果
 func blurEffectView(frame:CGRect) -> UIVisualEffectView {
@@ -657,4 +671,12 @@ func calculateLabelHeightWithText(with text:String , labelWidth: CGFloat ,textFo
     let attibute = [NSAttributedStringKey.font:textFont]
     size = text.boundingRect(with: size2, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attibute , context: nil);
     return size.size.height
+}
+
+func calculateLabelSizeWithText(with text:String , labelWidth: CGFloat ,textFont:UIFont) -> CGSize{ // 计算Label高度
+    var size = CGRect()
+    let size2 = CGSize(width: labelWidth, height: 0)//设置label的最大宽度
+    let attibute = [NSAttributedStringKey.font:textFont]
+    size = text.boundingRect(with: size2, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: attibute , context: nil);
+    return size.size
 }

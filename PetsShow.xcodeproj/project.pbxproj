@@ -17,6 +17,16 @@
 		0A217E8120C2F2D800A54E42 /* foodlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E8020C2F2D800A54E42 /* foodlistTableViewCell.swift */; };
 		0A217E8320C2F59600A54E42 /* foodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A217E8220C2F59600A54E42 /* foodListViewController.swift */; };
 		0A3460D120BA3B5C001117E0 /* WorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3460D020BA3B5C001117E0 /* WorksViewController.swift */; };
+		0A493F6F20D24E61009AC1D4 /* PlayGroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A493F6E20D24E61009AC1D4 /* PlayGroundViewController.swift */; };
+		0A493F7320D261DE009AC1D4 /* contentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A493F7220D261DE009AC1D4 /* contentTableViewCell.swift */; };
+		0A592CC620D7438200D1E0F0 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CC520D7438200D1E0F0 /* ActionView.swift */; };
+		0A592CCA20D7442B00D1E0F0 /* BlurPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CC920D7442B00D1E0F0 /* BlurPopupViewController.swift */; };
+		0A592CCC20D74F8C00D1E0F0 /* awardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CCB20D74F8C00D1E0F0 /* awardCollectionViewCell.swift */; };
+		0A592CCF20D7B10B00D1E0F0 /* HBAlertSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CCD20D7B10B00D1E0F0 /* HBAlertSheetView.swift */; };
+		0A592CD020D7B10B00D1E0F0 /* HBAlertSheetSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CCE20D7B10B00D1E0F0 /* HBAlertSheetSingleView.swift */; };
+		0A592CD220D7C5E600D1E0F0 /* MyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CD120D7C5E600D1E0F0 /* MyAlertController.swift */; };
+		0A592CD520D7D23800D1E0F0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CD420D7D23800D1E0F0 /* SearchViewController.swift */; };
+		0A592CD820D8A98500D1E0F0 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A592CD720D8A98500D1E0F0 /* SocialViewController.swift */; };
 		0A5F620120BAED57009A557E /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A99707120AFE5E900E4D37C /* PagingMenuController.framework */; };
 		0A5F620220BAED57009A557E /* PagingMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A99707120AFE5E900E4D37C /* PagingMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A5F620820BB0DA0009A557E /* PetsCareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F620720BB0DA0009A557E /* PetsCareViewController.swift */; };
@@ -86,6 +96,16 @@
 		0A217E8020C2F2D800A54E42 /* foodlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodlistTableViewCell.swift; sourceTree = "<group>"; };
 		0A217E8220C2F59600A54E42 /* foodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodListViewController.swift; sourceTree = "<group>"; };
 		0A3460D020BA3B5C001117E0 /* WorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksViewController.swift; sourceTree = "<group>"; };
+		0A493F6E20D24E61009AC1D4 /* PlayGroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGroundViewController.swift; sourceTree = "<group>"; };
+		0A493F7220D261DE009AC1D4 /* contentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentTableViewCell.swift; sourceTree = "<group>"; };
+		0A592CC520D7438200D1E0F0 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		0A592CC920D7442B00D1E0F0 /* BlurPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopupViewController.swift; sourceTree = "<group>"; };
+		0A592CCB20D74F8C00D1E0F0 /* awardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A592CCD20D7B10B00D1E0F0 /* HBAlertSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBAlertSheetView.swift; sourceTree = "<group>"; };
+		0A592CCE20D7B10B00D1E0F0 /* HBAlertSheetSingleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBAlertSheetSingleView.swift; sourceTree = "<group>"; };
+		0A592CD120D7C5E600D1E0F0 /* MyAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertController.swift; sourceTree = "<group>"; };
+		0A592CD420D7D23800D1E0F0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0A592CD720D8A98500D1E0F0 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		0A5F620720BB0DA0009A557E /* PetsCareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCareViewController.swift; sourceTree = "<group>"; };
 		0A5F620920BB0DBF009A557E /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		0A5F620B20BB0DEF009A557E /* ArticalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalsViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +166,22 @@
 			path = MainFood;
 			sourceTree = "<group>";
 		};
+		0A592CD320D7D20F00D1E0F0 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				0A592CD420D7D23800D1E0F0 /* SearchViewController.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		0A592CD620D8A97200D1E0F0 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				0A592CD720D8A98500D1E0F0 /* SocialViewController.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
 		0A5F620620BB0D8D009A557E /* PetsCare */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				0A99709920B01C4800E4D37C /* Extentsions.swift */,
+				0A592CD120D7C5E600D1E0F0 /* MyAlertController.swift */,
+				0A592CCD20D7B10B00D1E0F0 /* HBAlertSheetView.swift */,
+				0A592CCE20D7B10B00D1E0F0 /* HBAlertSheetSingleView.swift */,
 				0A99709D20B061B500E4D37C /* Animation.swift */,
 			);
 			path = common;
@@ -183,6 +222,12 @@
 		0A99707B20B0066400E4D37C /* show */ = {
 			isa = PBXGroup;
 			children = (
+				0A592CD320D7D20F00D1E0F0 /* search */,
+				0A493F6E20D24E61009AC1D4 /* PlayGroundViewController.swift */,
+				0A592CC920D7442B00D1E0F0 /* BlurPopupViewController.swift */,
+				0A592CC520D7438200D1E0F0 /* ActionView.swift */,
+				0A592CCB20D74F8C00D1E0F0 /* awardCollectionViewCell.swift */,
+				0A493F7220D261DE009AC1D4 /* contentTableViewCell.swift */,
 				0A99708320B00D0900E4D37C /* PetsShowViewController.swift */,
 				0A99709B20B029D900E4D37C /* ShowContentCollectionCell.swift */,
 				0A99709720B01B5000E4D37C /* FollowViewController.swift */,
@@ -224,6 +269,7 @@
 		0A99708B20B00DCF00E4D37C /* Pets */ = {
 			isa = PBXGroup;
 			children = (
+				0A592CD620D8A97200D1E0F0 /* Social */,
 				0A99708C20B00DE700E4D37C /* PetsViewController.swift */,
 				0A5F620620BB0D8D009A557E /* PetsCare */,
 				0A217E7A20C2DFF300A54E42 /* Shop */,
@@ -370,25 +416,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ADBEDA820BA3A0B00430ECA /* ContentViewController.swift in Sources */,
+				0A592CCC20D74F8C00D1E0F0 /* awardCollectionViewCell.swift in Sources */,
 				0A99708020B0093D00E4D37C /* RootTabViewController.swift in Sources */,
 				0A5F620A20BB0DBF009A557E /* ShopViewController.swift in Sources */,
 				0A078D9020C65ED900DCA6EB /* msgListTableViewCell.swift in Sources */,
 				0A078D9220C66E6400DCA6EB /* UploadActionView.swift in Sources */,
+				0A592CD020D7B10B00D1E0F0 /* HBAlertSheetSingleView.swift in Sources */,
 				0A99709C20B029D900E4D37C /* ShowContentCollectionCell.swift in Sources */,
 				0A99708820B00D2200E4D37C /* UploadViewController.swift in Sources */,
 				0A99709820B01B5000E4D37C /* FollowViewController.swift in Sources */,
 				0A217E8120C2F2D800A54E42 /* foodlistTableViewCell.swift in Sources */,
 				0ADBEDA420B9AEEC00430ECA /* SwiftyJSON.swift in Sources */,
+				0A592CCA20D7442B00D1E0F0 /* BlurPopupViewController.swift in Sources */,
 				0A078D9620C67CB500DCA6EB /* ResourceViewController.swift in Sources */,
+				0A592CD220D7C5E600D1E0F0 /* MyAlertController.swift in Sources */,
+				0A592CD820D8A98500D1E0F0 /* SocialViewController.swift in Sources */,
 				0A99708420B00D0900E4D37C /* PetsShowViewController.swift in Sources */,
 				0A99708620B00D1400E4D37C /* MeViewController.swift in Sources */,
 				0A217E7F20C2F2C800A54E42 /* mainFoodViewController.swift in Sources */,
 				0A5F620E20BB1157009A557E /* PetsListTableViewCell.swift in Sources */,
 				0A99709E20B061B500E4D37C /* Animation.swift in Sources */,
 				0A5F620820BB0DA0009A557E /* PetsCareViewController.swift in Sources */,
+				0A592CD520D7D23800D1E0F0 /* SearchViewController.swift in Sources */,
 				0A3460D120BA3B5C001117E0 /* WorksViewController.swift in Sources */,
 				0A99709A20B01C4800E4D37C /* Extentsions.swift in Sources */,
+				0A493F7320D261DE009AC1D4 /* contentTableViewCell.swift in Sources */,
 				0A99708A20B00D3100E4D37C /* MSGViewController.swift in Sources */,
+				0A592CCF20D7B10B00D1E0F0 /* HBAlertSheetView.swift in Sources */,
+				0A592CC620D7438200D1E0F0 /* ActionView.swift in Sources */,
 				0ADBEDA220B9AED300430ECA /* SwiftNotice.swift in Sources */,
 				0A217E7C20C2E11600A54E42 /* ShopCollectionViewCell.swift in Sources */,
 				0AAAFA4D20BD2B37005C7F25 /* PetsShowNavViewController.swift in Sources */,
@@ -397,6 +452,7 @@
 				0ADBEDA620B9B07800430ECA /* greyLayerPrompt.swift in Sources */,
 				0A5F620C20BB0DEF009A557E /* ArticalsViewController.swift in Sources */,
 				0A99708D20B00DE700E4D37C /* PetsViewController.swift in Sources */,
+				0A493F6F20D24E61009AC1D4 /* PlayGroundViewController.swift in Sources */,
 				0A217E8320C2F59600A54E42 /* foodListViewController.swift in Sources */,
 				0A078D9420C673C700DCA6EB /* PopupViewController.swift in Sources */,
 			);

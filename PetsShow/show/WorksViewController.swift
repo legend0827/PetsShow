@@ -18,7 +18,7 @@ class WorksViewController: UIViewController,UICollectionViewDataSource,UICollect
         
         //随机取头像
         //let avatarIndex = Int(arc4random()%5+1)
-        let image = UIImage(named:"bg\(indexPath.row)")
+        let image = UIImage(named: "video1Img")//UIImage(named:"bg\(indexPath.row)")
         cell.Rimage.image = image
         cell.Rimage.contentMode = .scaleAspectFill
         cell.timeLine.isHidden = true
